@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
+const compression = require('compression');
 
 const logic = require('./logic.js');
 
@@ -16,12 +17,13 @@ const app = express();
 const port = process.env.PORT || 3009;
 const url = `http://localhost:${port}`;
 
+app.use(compression());
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.get('/rooms/:roomId/reviews', (req, res) => {
+app.get('/reviews/:roomId', (req, res) => {
   const { roomId } = req.params;
   knex
     .select()

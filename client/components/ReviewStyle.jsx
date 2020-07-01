@@ -76,4 +76,4 @@ export const ExpandedText = styled.div`
   width: 454px;
   display: flex;
   max-width: ${props => (props.modal ? '540px' : '455px')};
-`
+`;
