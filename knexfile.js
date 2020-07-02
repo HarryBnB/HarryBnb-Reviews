@@ -1,15 +1,15 @@
 // Update with your config settings.
-const config = require('./config');
+// const config = require('./config');
 const path = require('path');
 
 module.exports = {
 
   development: {
     client: 'pg',
-    connection: {
-      host: 'localhost',
-      dbPassword: config.dbPassword,
-      user: 'eric',
+    connection: process.env.DATABASE_URL || {
+      host: '172.17.0.2',
+      password: 'rootpass@',
+      user: 'ericsu',
       database: 'airbnb',
       port: 5432,
     },

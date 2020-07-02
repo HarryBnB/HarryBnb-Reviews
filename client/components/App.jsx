@@ -9,6 +9,7 @@ import OverallStars from './OverallStars.jsx';
 import StarsList from './StarsList.jsx';
 import ReviewList from './ReviewList.jsx';
 import Modal from './Modal.jsx';
+import { sampleData } from '../../server/sampleData.js';
 
 
 const Wrapper = styled.div`
@@ -27,7 +28,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      reviewsData: [],
+      reviewsData: sampleData,
       showModal: false,
       loaded: false,
     };
@@ -37,13 +38,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    console.log('components mounted');
     const randomID = Math.floor(Math.random() * 99) + 1;
     this.getRoomReviews(randomID);
   }
 
   async getRoomReviews(id) {
     try {
-      const response = await axios.get(`http://localhost:3009/reviews/${id}`);
+      const response = await axios.get(`/reviews/${id}`);
       this.setState(() => ({
         reviewsData: response.data,
         loaded: true,
@@ -67,7 +69,6 @@ class App extends React.Component {
   }
 
   render() {
-    // console.log('RENDER STATE', this.state);
     const { reviewsData, showModal, loaded } = this.state;
     return (
       <div>
