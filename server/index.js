@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/reviews/:roomId', (req, res) => {
-  console.log('got get request')
+  console.log('got get request');
   const { roomId } = req.params;
   knex
     .select()
