@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon ./server/index.js --watch",
     "test": "jest",
-    "build": "webpack -d --watch",
+    "build": "webpack -p --watch",
     "knex-seed": "knex migrate:rollback &&  npx knex migrate:latest && knex seed:run",
     "watsonseedmachine": "knex migrate:rollback &&  npx knex migrate:latest && knex seed:run"
   },
@@ -31,6 +31,7 @@
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.10.7",
+    "brotli-webpack-plugin": "^1.1.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",

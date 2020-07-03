@@ -6,10 +6,10 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: process.env.DATABASE_URL || {
-      host: '172.17.0.2',
+    connection: {
+      host: 'localhost',
       password: 'rootpass@',
-      user: 'ericsu',
+      user: 'eric',
       database: 'airbnb',
       port: 5432,
     },
