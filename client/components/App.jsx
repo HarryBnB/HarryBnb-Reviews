@@ -38,7 +38,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log('components mounted');
     const randomID = Math.floor(Math.random() * 99) + 1;
     this.getRoomReviews(randomID);
   }
