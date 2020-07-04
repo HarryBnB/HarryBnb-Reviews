@@ -1,5 +1,5 @@
 // Update with your config settings.
-const config = require('./config');
+// const config = require('./config');
 const path = require('path');
 
 module.exports = {
@@ -7,9 +7,9 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host: 'localhost',
-      dbPassword: config.dbPassword,
-      user: 'eric',
+      host: '172.17.0.3',
+      password: 'rootpass@',
+      user: 'ericsu',
       database: 'airbnb',
       port: 5432,
     },

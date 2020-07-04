@@ -1,5 +1,6 @@
+/* eslint-disable prefer-destructuring */
 const path = require('path');
-
+const BrotliPlugin = require('brotli-webpack-plugin');
 const CLIENT_DIR = path.join(__dirname, '/client');
 const PUBLIC_DIR = path.join(__dirname, '/public');
 
@@ -9,7 +10,7 @@ module.exports = {
     filename: 'bundle.js',
     path: PUBLIC_DIR,
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -24,4 +25,12 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+		new BrotliPlugin({
+			asset: '[path].br[query]',
+			test: /\.(jsx|js|css|html|svg)$/,
+			threshold: 10240,
+			minRatio: 0.8
+		})
+	]
 };
