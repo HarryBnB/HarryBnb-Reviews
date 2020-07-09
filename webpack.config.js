@@ -1,23 +1,24 @@
 /* eslint-disable prefer-destructuring */
 const path = require('path');
 const BrotliPlugin = require('brotli-webpack-plugin');
-const CLIENT_DIR = path.join(__dirname, '/client');
-const PUBLIC_DIR = path.join(__dirname, '/public');
+const CompressionPlugin = require('compression-webpack-plugin');
 
+const CLIENT_DIR = path.join(__dirname, 'client');
+const PUBLIC_DIR = path.join(__dirname, 'public');
 module.exports = {
   entry: `${CLIENT_DIR}/index.jsx`,
   output: {
     filename: 'bundle.js',
     path: PUBLIC_DIR,
   },
-  mode: 'production',
+  // mode: 'production',
   module: {
     rules: [
       {
         test: /\.jsx?/,
         include: CLIENT_DIR,
         exclude: /node.modules/,
-        loader: 'babel-loader?cacheDirectory',
+        loader: 'babel-loader',
       },
       {
         test: /\.(woff2|woff|eot|ttf|otf)$/,
@@ -26,11 +27,18 @@ module.exports = {
     ],
   },
   plugins: [
-		new BrotliPlugin({
-			asset: '[path].br[query]',
-			test: /\.(jsx|js|css|html|svg)$/,
-			threshold: 10240,
-			minRatio: 0.8
-		})
-	]
+    new CompressionPlugin({
+      filename: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8,
+    }),
+    new BrotliPlugin({
+      filename: '[path].br[query]',
+      test: /\.js$|\.css$|\.html$/,
+      threshold: 10240,
+      minRatio: 0.8,
+    }),
+  ],
 };
