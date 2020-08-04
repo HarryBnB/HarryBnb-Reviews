@@ -1,8 +1,6 @@
 # Reviews
-Customer reviews moduel
+Customer reviews module
+DEMO: https://youtu.be/hp5IDduuZCs
 
 
--users
--reviews
--dates
--rating
+
