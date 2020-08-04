@@ -1,6 +1,4 @@
 # Reviews
 Customer reviews module
 DEMO: https://youtu.be/hp5IDduuZCs
-
-
-https://github.com/HarrySQL/Reviews/issues/16#issue-672988585
+Google PageSpeed Insights: https://i.imgur.com/QaQ4tsp.png
