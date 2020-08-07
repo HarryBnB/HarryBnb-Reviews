@@ -1,8 +1,9 @@
 # Reviews
-clone of AirBnB reviews
+Customer reviews module
 
+Moule DEMO: https://youtu.be/hp5IDduuZCs
 
--users
--reviews
--dates
--rating
+App DEMO: https://youtu.be/p5fqJuJXYno
+
+Google PageSpeed Insights: https://i.imgur.com/QaQ4tsp.png
+
