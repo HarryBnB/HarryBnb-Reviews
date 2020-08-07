@@ -15,7 +15,6 @@ const knex = require('knex')(configuration);
 const app = express();
 
 const port = process.env.PORT || 3009;
-const url = `http://localhost:${port}`;
 const publicPath = path.join(__dirname, '/../public');
 app.use(cors());
 app.use(bodyParser.json());
