@@ -38,8 +38,10 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const randomID = Math.floor(Math.random() * 99) + 1;
-    this.getRoomReviews(randomID);
+    const id = Math.floor(Math.random() * 99) + 1;
+    // const id = window.location.pathname.split('/')[2];
+    // console.log(id)
+    this.getRoomReviews(id);
   }
 
   async getRoomReviews(id) {

@@ -4,7 +4,6 @@ import styled from 'styled-components';
 
 import App from './components/App.jsx';
 
-
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
