@@ -1,6 +1,6 @@
 # Reviews Module for Harry's BnB 
 ### Harry's BnB App allows users book temporary stays across the globe
-*User Reviews Module for a Bed and Breakfast app built with Knex, PostgreSQL, Express, React, and Node.js*
+*User Reviews Module for a Bed and Breakfast app built with Knex, PostgreSQL, Express, React, and Node.js. Jest test suites included*
 
 > simple, sleek, and fast...
 
@@ -53,5 +53,10 @@ npm start
 ```
 
 Now go to localhost:3009 in your browser, have fun :)
+
+Run test
+```
+npm run test
+```
 
 
