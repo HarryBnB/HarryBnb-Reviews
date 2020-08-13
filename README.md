@@ -14,6 +14,7 @@ App DEMO: https://youtu.be/p5fqJuJXYno
 
 
 ## Performance - Google PageSpeed Insights
+> Optimizations including Brotli and Gzip compressions, webP images, image resizing, and lazy-loading. 
 ![](https://i.imgur.com/QaQ4tsp.png)
 
 
