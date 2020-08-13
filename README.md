@@ -1,7 +1,9 @@
 # Reviews
 Customer reviews module
 
-Moule DEMO: https://youtu.be/hp5IDduuZCs
+Module DEMO: https://youtu.be/hp5IDduuZCs
+
+![](name-of-giphy.gif)
 
 App DEMO: https://youtu.be/p5fqJuJXYno
 
