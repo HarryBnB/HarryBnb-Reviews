@@ -3,7 +3,7 @@ Customer reviews module
 
 Module DEMO: https://youtu.be/hp5IDduuZCs
 
-![](name-of-giphy.gif)
+![](HARRYBNB_REVIEWS_DEMO.gif)
 
 App DEMO: https://youtu.be/p5fqJuJXYno
 
