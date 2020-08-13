@@ -1,5 +1,6 @@
-# Reviews
-Customer reviews module
+# Reviews Module for Harry's BnB 
+### Harry's BnB App allows users book temporary stays across the globe
+*User Reviews Module for a Bed and Breakfast app built with PostgreSQL, Express, React, and Node.js*
 
 Module DEMO: https://youtu.be/hp5IDduuZCs
 
