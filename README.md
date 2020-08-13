@@ -18,7 +18,8 @@ App DEMO: https://youtu.be/p5fqJuJXYno
 
 
 ## Getting Started 
-Please have PostgreSQL installed. 
+1. Please have PostgreSQL installed. 
+
 Go to knexfile.js
 CHANGE 'user' and 'password' to your settings
 ```
