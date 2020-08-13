@@ -55,7 +55,7 @@ Start the app
 npm start
 ```
 
-Now go to localhost:3009 in your browser, have fun :)
+Now go to http://localhost:3009 in your browser, have fun :)
 
 
 Run test
