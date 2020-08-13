@@ -4,7 +4,7 @@
 
 > simple, sleek, and fast...
 
-## DEMOs 
+## Demos 
 
 Module DEMO: https://youtu.be/hp5IDduuZCs
 
