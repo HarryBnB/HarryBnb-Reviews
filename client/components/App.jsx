@@ -39,6 +39,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const id = Math.floor(Math.random() * 99) + 1;
+    // uncommet code below to get id from url
     // const id = window.location.pathname.split('/')[2];
     // console.log(id)
     this.getRoomReviews(id);
