@@ -10,7 +10,8 @@ Module DEMO: https://youtu.be/hp5IDduuZCs
 
 ![](HARRYBNB_REVIEWS_DEMO.gif)
 
-App DEMO: https://youtu.be/p5fqJuJXYno
+App DEMO: https://youtu.be/p5fqJuJXYno. 
+
 
 
 ### Performance - Google PageSpeed Insights
