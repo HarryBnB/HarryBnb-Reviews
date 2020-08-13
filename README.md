@@ -34,7 +34,7 @@ connection: {
 ```
 
 
-Install dependancies
+Install dependencies
 ```
 npm install
 ```
