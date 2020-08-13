@@ -4,7 +4,7 @@
 
 > simple, sleek, and fast...
 
-### DEMOs 
+## DEMOs 
 
 Module DEMO: https://youtu.be/hp5IDduuZCs
 
@@ -12,9 +12,6 @@ Module DEMO: https://youtu.be/hp5IDduuZCs
 
 App DEMO: https://youtu.be/p5fqJuJXYno
 
-  
-  
-  
 
-### Performance - Google PageSpeed Insights
+## Performance - Google PageSpeed Insights
 ![](https://i.imgur.com/QaQ4tsp.png)
