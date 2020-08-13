@@ -18,7 +18,7 @@ App DEMO: https://youtu.be/p5fqJuJXYno
 
 
 ## Getting Started 
-1. Please have PostgreSQL installed. Go to knexfile.js
+Please have PostgreSQL installed. Go to knexfile.js
 CHANGE 'user' and 'password' to your settings
 ```
 connection: {
@@ -29,3 +29,29 @@ connection: {
       port: 5432,
     }
 ```
+
+
+Install dependancies
+```
+npm install
+```
+
+Seed database
+```
+npm run knex-seed
+```
+
+Build Webpack bundle
+
+```
+npm run build
+```
+
+Start the app
+```
+npm start
+```
+
+Now go to localhost:3009 in your browser, have fun :)
+
+
