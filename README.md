@@ -28,7 +28,7 @@ connection: {
       host: 'localhost',
       password: 'YOURNEWPASSWORD',
       user: 'YOURUSERNAME',
-      database: 'airbnb',
+      database: 'YOURDBNAME',
       port: 5432,
     }
 ```
