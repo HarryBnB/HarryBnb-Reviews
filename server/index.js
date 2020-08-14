@@ -41,5 +41,5 @@ app.get('/reviews/:roomId', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Listening at ${url}`);
+  console.log(`Listening at ${port}`);
 });
